@@ -19,6 +19,8 @@ router.get("/",async(req,res)=>{
         })
     }
 })
+
+// route for search a book 
 router.get("/search/:id", async (req, res) => {
     try {
       const { id } = req.params;
@@ -35,15 +37,11 @@ router.get("/search/:id", async (req, res) => {
     }
   });
   
-
+// route for get a book data
 router.get("/:id",async(req,res)=>{
     try{
         const {id} = req.params;
-        const book = await Book.findById(
-       id)
-        
-
-
+        const book = await Book.findById(id)
     }catch(error){
         console.log(error.message);
         res.status(500).send({
@@ -81,7 +79,7 @@ router.put("/:id", async(req,res)=>{
         })
     }
 })
-
+//Route for delete a book
 router.delete("/:id", async(req,res)=>{
 try{
     const { id } = req.params;
@@ -104,7 +102,7 @@ try{
     })
 }
 })
-
+//Route for post a book
 router.post('/', async(req,res)=>{
     try{
         if(

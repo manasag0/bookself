@@ -5,10 +5,12 @@ import bookRoute from "./bookRoutes/bookRoute.js";
 import cors from 'cors';
 
 const app = express();
-  
+// middleware for parsing request body
 app.use(express.json());
 
-// app.use(cors())
+//middleware
+
+app.use(cors())
 
 // app.use(cors({
 //     origin:"http://localhost:3000",
