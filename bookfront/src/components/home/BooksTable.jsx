@@ -11,10 +11,10 @@ const BooksTable = ({ books }) => {
             <table className="w-full border-separate border-spacing-2">
                 <thead>
                     <tr>
-                        <th className=" border border-slate-600 rounded-md sm:hidden" >No</th>
+                        <th className=" border border-slate-600 rounded-md " >No</th>
                         <th className=" border border-slate-600 rounded-md">Title</th>
-                        <th className=" border border-slate-600 rounded-md max-md:hidden">Author</th>
-                        <th className=" border border-slate-600 rounded-md max-md:hidden">Publish Year</th>
+                        <th className=" border border-slate-600 rounded-md ">Author</th>
+                        <th className=" border border-slate-600 rounded-md ">Publish Year</th>
                         <th className="border border-slate-600 rounded-md">Operations</th>
                         <th ></th>
                     </tr>
